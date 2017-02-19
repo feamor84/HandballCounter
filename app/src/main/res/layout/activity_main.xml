@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/mainContainer"
+    tools:context="pl.bartekpawlowski.handballcounter.MainActivity">
+
+    <LinearLayout style="@style/horizontalContainer">
+
+        <LinearLayout style="@style/teamContainer">
+
+            <TextView
+                style="@style/textView.team"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:id="@+id/scoreTeamA"
+                style="@style/textView.score"
+                android:text="0" />
+
+            <TextView
+                style="@style/textView.penaltyText"
+                android:text="@string/penalty" />
+
+            <TextView
+                android:id="@+id/penaltyTeamA"
+                style="@style/textView.penaltyNumber"
+                android:text="0 min" />
+
+            <LinearLayout style="@style/cardContainer">
+
+                <TextView
+                    android:id="@+id/yellowCardTeamA"
+                    style="@style/textView.card.yellow"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/redCardTeamA"
+                    style="@style/textView.card.red"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/button"
+                android:text="@string/_1_point"
+                android:onClick="addPoint"
+                android:tag="A"/>
+
+            <Button
+                style="@style/button"
+                android:text="@string/_2_min_penalty"
+                android:onClick="addPenalty"
+                android:tag="A"/>
+
+            <LinearLayout style="@style/cardContainer">
+
+                <Button
+                    style="@style/button.card.yellow"
+                    android:text="+1"
+                    android:onClick="addYellowCard"
+                    android:tag="A"/>
+
+                <Button
+                    style="@style/button.card.red"
+                    android:text="+1"
+                    android:onClick="addRedCard"
+                    android:tag="A"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/verticalDivider" />
+
+        <LinearLayout style="@style/teamContainer">
+
+            <TextView
+                style="@style/textView.team"
+                android:text="@string/team_b" />
+
+            <TextView
+                android:id="@+id/scoreTeamB"
+                style="@style/textView.score"
+                android:text="0" />
+
+            <TextView
+                style="@style/textView.penaltyText"
+                android:text="@string/penalty" />
+
+            <TextView
+                android:id="@+id/penaltyTeamB"
+                style="@style/textView.penaltyNumber"
+                android:text="0 min" />
+
+            <LinearLayout style="@style/cardContainer">
+
+                <TextView
+                    android:id="@+id/yellowCardTeamB"
+                    style="@style/textView.card.yellow"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/redCardTeamB"
+                    style="@style/textView.card.red"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/button"
+                android:text="@string/_1_point"
+                android:onClick="addPoint"
+                android:tag="B"/>
+
+            <Button
+                style="@style/button"
+                android:text="@string/_2_min_penalty"
+                android:onClick="addPenalty"
+                android:tag="B"/>
+
+            <LinearLayout style="@style/cardContainer">
+
+                <Button
+                    style="@style/button.card.yellow"
+                    android:text="+1"
+                    android:onClick="addYellowCard"
+                    android:tag="B"/>
+
+                <Button
+                    style="@style/button.card.red"
+                    android:text="+1"
+                    android:onClick="addRedCard"
+                    android:tag="B"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/button.reset"
+        android:text="@string/reset"
+        android:onClick="reset"/>
+
+</RelativeLayout>

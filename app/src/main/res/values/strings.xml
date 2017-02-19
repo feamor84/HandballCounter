@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Handball Counter</string>
+    <string name="team_a">Team A</string>
+    <string name="penalty">Penalty</string>
+    <string name="_1_point">+1 Point</string>
+    <string name="_2_min_penalty">2 min Penalty</string>
+    <string name="team_b">Team B</string>
+    <string name="reset">Reset</string>
+</resources>

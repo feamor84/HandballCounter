@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F7CAC</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtonNormal">#3F7CAC</color>
+    <color name="colorBackground">#F2F7F2</color>
+    <color name="colorButtonText">#F5F5F5</color>
+
+    <!--Text view-->
+    <color name="colorTextViewHeading">#607D8B</color>
+    <color name="colorTextViewContent">#78909C</color>
+    <!--Card buttons-->
+    <color name="redCard">#EF5350</color>
+    <color name="yellowCard">#FFEE58</color>
+    <color name="cardText">#424242</color>
+
+    <!--Divider-->
+    <color name="verticalDivider">#CFD8DC</color>
+</resources>
+
