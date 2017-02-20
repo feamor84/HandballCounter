@@ -23,22 +23,22 @@
     </style>
 
     <style name="teamContainer">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/layout_width_for_equal_containers</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">@dimen/container_padding_big</item>
+        <item name="android:paddingRight">@dimen/container_padding_big</item>
+        <item name="android:paddingTop">@dimen/container_padding_big</item>
     </style>
 
     <style name="cardContainer">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:paddingBottom">16dp</item>
-        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">@dimen/container_padding_big</item>
+        <item name="android:paddingTop">@dimen/container_padding_small</item>
     </style>
 
     <!--TextViews-->
@@ -48,44 +48,44 @@
     </style>
 
     <style name="textView.team">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/team_heading</item>
         <item name="android:textColor">@color/colorTextViewHeading</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="textView.score">
-        <item name="android:textSize">56sp</item>
+        <item name="android:textSize">@dimen/team_content</item>
         <item name="android:textColor">@color/colorTextViewContent</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
     <style name="textView.card">
-        <item name="android:padding">12dp</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:padding">@dimen/textview_space_big</item>
+        <item name="android:textSize">@dimen/card_content</item>
         <item name="android:textColor">@color/cardText</item>
     </style>
 
     <style name="textView.card.red">
         <item name="android:background">@drawable/red_card</item>
-        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/textview_space_small</item>
     </style>
 
     <style name="textView.card.yellow">
         <item name="android:background">@drawable/yellow_card</item>
-        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginRight">@dimen/textview_space_small</item>
     </style>
 
     <style name="textView.penaltyText">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/penalty_heading</item>
         <item name="android:textColor">@color/colorTextViewHeading</item>
         <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingBottom">@dimen/textview_space_small</item>
     </style>
 
     <style name="textView.penaltyNumber">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/penalty_content</item>
         <item name="android:textColor">@color/colorTextViewContent</item>
-        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingBottom">@dimen/textview_space_big</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
@@ -93,13 +93,13 @@
     <style name="button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">4dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_small</item>
         <item name="android:textColor">@color/colorButtonText</item>
     </style>
 
     <style name="button.card">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/layout_width_for_equal_containers</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/cardText</item>
@@ -107,27 +107,27 @@
 
     <style name="button.card.yellow">
         <item name="android:background">@color/yellowCard</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_medium</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin_small</item>
     </style>
 
     <style name="button.card.red">
         <item name="android:background">@color/redCard</item>
-        <item name="android:layout_marginRight">4dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin_medium</item>
     </style>
 
     <style name="button.reset">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_big</item>
     </style>
 
     <!--Vertical divider-->
     <style name="verticalDivider">
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_width">@dimen/vertical_divider_width</item>
         <item name="android:background">@color/verticalDivider</item>
     </style>
 
