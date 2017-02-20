@@ -114,11 +114,11 @@ public class MainActivity extends AppCompatActivity {
 
         switch (team) {
             case "A":
-                scoreTeamA = scoreTeamA + 1;
+                scoreTeamA += 1;
                 displayScoreTeamA(scoreTeamA);
                 break;
             case "B":
-                scoreTeamB = scoreTeamB + 1;
+                scoreTeamB += 1;
                 displayScoreTeamB(scoreTeamB);
                 break;
         }
@@ -129,11 +129,11 @@ public class MainActivity extends AppCompatActivity {
 
         switch (team) {
             case "A":
-                penaltyTeamA = penaltyTeamA + 1;
+                penaltyTeamA += 1;
                 displayPenaltyTeamA(penaltyTeamA);
                 break;
             case "B":
-                penaltyTeamB = penaltyTeamB + 1;
+                penaltyTeamB += 1;
                 displayPenlatyTeamB(penaltyTeamB);
                 break;
         }
@@ -144,11 +144,11 @@ public class MainActivity extends AppCompatActivity {
 
         switch (team) {
             case "A":
-                yellowCardTeamA = yellowCardTeamA + 1;
+                yellowCardTeamA += 1;
                 displayYellowCardTeamA(yellowCardTeamA);
                 break;
             case "B":
-                yellowCardTeamB = yellowCardTeamB + 1;
+                yellowCardTeamB += 1;
                 displayYellowCardTeamB(yellowCardTeamB);
                 break;
         }
@@ -159,11 +159,11 @@ public class MainActivity extends AppCompatActivity {
 
         switch (team) {
             case "A":
-                redCardTeamA = redCardTeamA + 1;
+                redCardTeamA += 1;
                 displayRedCardTeamA(redCardTeamA);
                 break;
             case "B":
-                redCardTeamB = redCardTeamB + 1;
+                redCardTeamB += 1;
                 displayRedCardTeamB(redCardTeamB);
                 break;
         }
