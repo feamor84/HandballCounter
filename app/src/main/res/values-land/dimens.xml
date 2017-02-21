@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Containers-->
+    <dimen name="layout_width_for_equal_containers">0dp</dimen>
+    <dimen name="container_padding_big">8dp</dimen>
+    <dimen name="container_padding_small">4dp</dimen>
+
+    <!--TextView-->
+    <dimen name="textview_space_big">8dp</dimen>
+    <dimen name="textview_space_small">2dp</dimen>
+
+    <!--Vertical divider-->
+    <dimen name="vertical_divider_width">1dp</dimen>
+
+    <!--Button-->
+    <dimen name="button_margin_big">16dp</dimen>
+    <dimen name="button_margin_medium">8dp</dimen>
+    <dimen name="button_margin_small">4dp</dimen>
+
+    <!--Font size-->
+    <dimen name="team_heading">18sp</dimen>
+    <dimen name="team_content">28sp</dimen>
+    <dimen name="card_content">28sp</dimen>
+    <dimen name="penalty_heading">16sp</dimen>
+    <dimen name="penalty_content">32sp</dimen>
+</resources>

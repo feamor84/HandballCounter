@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/mainContainer"
+    tools:context="pl.bartekpawlowski.handballcounter.MainActivity">
+
+    <Button
+        style="@style/button.reset"
+        android:text="@string/reset"
+        android:onClick="reset"/>
+
+    <LinearLayout style="@style/horizontalContainer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout style="@style/teamContainer">
+
+            <TextView
+                style="@style/textView.team"
+                android:text="@string/team_a" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="Score"/>
+
+                    <TextView
+                        android:id="@+id/scoreTeamA"
+                        style="@style/textView.content"
+                        android:text="@string/_0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="@string/penalty" />
+
+                    <TextView
+                        android:id="@+id/penaltyTeamA"
+                        style="@style/textView.content"
+                        android:text="@string/_0_min" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="Cards" />
+
+                    <LinearLayout style="@style/cardContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/yellowCardTeamA"
+                            style="@style/textView.card.yellow"
+                            android:text="@string/_0" />
+
+                        <TextView
+                            android:id="@+id/redCardTeamA"
+                            style="@style/textView.card.red"
+                            android:text="@string/_0" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/buttonContainer">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_1_point"
+                    android:onClick="addPoint"
+                    android:tag="A"/>
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_2_min_penalty"
+                    android:onClick="addPenalty"
+                    android:tag="A"/>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/buttonContainer">
+
+                <Button
+                    style="@style/button.card.yellow"
+                    android:text="@string/plus_1"
+                    android:onClick="addYellowCard"
+                    android:tag="A" />
+
+                <Button
+                    style="@style/button.card.red"
+                    android:text="@string/plus_1"
+                    android:onClick="addRedCard"
+                    android:tag="A"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/verticalDivider" />
+
+        <LinearLayout style="@style/teamContainer">
+
+            <TextView
+                style="@style/textView.team"
+                android:text="@string/team_b"
+                android:id="@+id/textView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="Score"/>
+
+                    <TextView
+                        android:id="@+id/scoreTeamB"
+                        style="@style/textView.content"
+                        android:text="@string/_0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="@string/penalty" />
+
+                    <TextView
+                        android:id="@+id/penaltyTeamB"
+                        style="@style/textView.content"
+                        android:text="@string/_0_min" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/textView.heading"
+                        android:text="Cards" />
+
+                    <LinearLayout style="@style/cardContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/yellowCardTeamB"
+                            style="@style/textView.card.yellow"
+                            android:text="@string/_0" />
+
+                        <TextView
+                            android:id="@+id/redCardTeamB"
+                            style="@style/textView.card.red"
+                            android:text="@string/_0" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/buttonContainer">
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_1_point"
+                    android:onClick="addPoint"
+                    android:tag="B"/>
+
+                <Button
+                    style="@style/button"
+                    android:text="@string/_2_min_penalty"
+                    android:onClick="addPenalty"
+                    android:tag="B"/>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/buttonContainer">
+
+                <Button
+                    style="@style/button.card.yellow"
+                    android:text="@string/plus_1"
+                    android:onClick="addYellowCard"
+                    android:tag="B"/>
+
+                <Button
+                    style="@style/button.card.red"
+                    android:text="@string/plus_1"
+                    android:onClick="addRedCard"
+                    android:tag="B"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
