@@ -59,7 +59,8 @@
                     style="@style/button.card.yellow"
                     android:text="@string/plus_1"
                     android:onClick="addYellowCard"
-                    android:tag="A"/>
+                    android:tag="A"
+                    android:id="@+id/button" />
 
                 <Button
                     style="@style/button.card.red"

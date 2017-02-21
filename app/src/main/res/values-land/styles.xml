@@ -22,6 +22,14 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
+    <style name="verticalContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
     <style name="teamContainer">
         <item name="android:layout_width">@dimen/layout_width_for_equal_containers</item>
         <item name="android:layout_height">wrap_content</item>
@@ -32,7 +40,7 @@
     </style>
 
     <style name="buttonContainer">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
     </style>
@@ -41,6 +49,13 @@
     <style name="textView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textView.team">
+        <item name="android:textSize">@dimen/team_heading</item>
+        <item name="android:textColor">@color/colorTextViewHeading</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginBottom">@dimen/textview_space_big</item>
     </style>
 
     <style name="textView.heading">
@@ -82,7 +97,8 @@
 
     <!--Buttons-->
     <style name="button">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">@dimen/layout_width_for_equal_containers</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/button_margin_small</item>
         <item name="android:layout_marginBottom">@dimen/button_margin_small</item>
@@ -90,22 +106,15 @@
     </style>
 
     <style name="button.card">
-        <item name="android:layout_width">@dimen/layout_width_for_equal_containers</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/cardText</item>
     </style>
 
     <style name="button.card.yellow">
         <item name="android:backgroundTint">@color/yellowCard</item>
-        <item name="android:layout_marginRight">@dimen/button_margin_medium</item>
-        <item name="android:layout_marginLeft">@dimen/button_margin_small</item>
     </style>
 
     <style name="button.card.red">
         <item name="android:backgroundTint">@color/redCard</item>
-        <item name="android:layout_marginRight">@dimen/button_margin_small</item>
-        <item name="android:layout_marginLeft">@dimen/button_margin_medium</item>
     </style>
 
     <style name="button.reset">
