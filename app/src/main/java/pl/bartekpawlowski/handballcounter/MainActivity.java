@@ -17,6 +17,16 @@ public class MainActivity extends AppCompatActivity {
     int redCardTeamA;
     int redCardTeamB;
 
+//  Views
+    private TextView scoreTeamAView;
+    private TextView scoreTeamBView;
+    private TextView penaltyTeamAView;
+    private TextView penaltyTeamBView;
+    private TextView yellowCardTeamAView;
+    private TextView yellowCardTeamBView;
+    private TextView redCardTeamAView;
+    private TextView redCardTeamBView;
+
     static final String SCORE_TEAM_A = "scoreTeamA";
     static final String SCORE_TEAM_B = "scoreTeamB";
     static final String PENALTY_TEAM_A = "penaltyTeamA";
@@ -30,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        scoreTeamAView = (TextView) findViewById(R.id.scoreTeamA);
+        scoreTeamBView = (TextView) findViewById(R.id.scoreTeamB);
+        penaltyTeamAView = (TextView) findViewById(R.id.penaltyTeamA);
+        penaltyTeamBView = (TextView) findViewById(R.id.penaltyTeamB);
+        yellowCardTeamAView = (TextView) findViewById(R.id.yellowCardTeamA);
+        yellowCardTeamBView = (TextView) findViewById(R.id.yellowCardTeamB);
+        redCardTeamAView = (TextView) findViewById(R.id.redCardTeamA);
+        redCardTeamBView = (TextView) findViewById(R.id.redCardTeamB);
 
         if (savedInstanceState != null) {
             scoreTeamA = savedInstanceState.getInt(SCORE_TEAM_A);
@@ -69,45 +88,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayScoreTeamA(int score) {
-        TextView textView = (TextView) findViewById(R.id.scoreTeamA);
-        textView.setText(String.valueOf(score));
+        scoreTeamAView.setText(String.valueOf(score));
     }
 
     private void displayScoreTeamB(int score) {
-        TextView textView = (TextView) findViewById(R.id.scoreTeamB);
-        textView.setText(String.valueOf(score));
+        scoreTeamBView.setText(String.valueOf(score));
     }
 
     private void displayPenaltyTeamA(int penalty) {
         String text = penalty * 2 + " min";
-        TextView textView = (TextView) findViewById(R.id.penaltyTeamA);
-        textView.setText(text);
+        penaltyTeamAView.setText(text);
     }
 
     private void displayPenlatyTeamB(int penalty) {
         String text = penalty * 2 + " min";
-        TextView textView = (TextView) findViewById(R.id.penaltyTeamB);
-        textView.setText(text);
+        penaltyTeamBView.setText(text);
     }
 
     private void displayYellowCardTeamA(int card) {
-        TextView textView = (TextView) findViewById(R.id.yellowCardTeamA);
-        textView.setText(String.valueOf(card));
+        yellowCardTeamAView.setText(String.valueOf(card));
     }
 
     private void displayYellowCardTeamB(int card) {
-        TextView textView = (TextView) findViewById(R.id.yellowCardTeamB);
-        textView.setText(String.valueOf(card));
+        yellowCardTeamBView.setText(String.valueOf(card));
     }
 
     private void displayRedCardTeamA(int card) {
-        TextView textView = (TextView) findViewById(R.id.redCardTeamA);
-        textView.setText(String.valueOf(card));
+        redCardTeamAView.setText(String.valueOf(card));
     }
 
     private void displayRedCardTeamB(int card) {
-        TextView textView = (TextView) findViewById(R.id.redCardTeamB);
-        textView.setText(String.valueOf(card));
+        redCardTeamBView.setText(String.valueOf(card));
     }
 
     public void addPoint(View view) {
